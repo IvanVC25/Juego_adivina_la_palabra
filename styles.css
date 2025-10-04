@@ -57,7 +57,7 @@ body {
 
 .welcome-footer {
     margin-top: auto;
-    padding-top: 15px
+    padding-top: 20px
 }
 
 .stat-label {
@@ -490,13 +490,9 @@ button.ghost {
         gap: 8px;
     }
     
-    .welcome-card {
-        height: calc(100vh - 8px);
-        max-height: calc(100vh - 8px);
-    }
-    
-    .welcome-content {
-        padding: 15px 15px 10px 15px;
+    /* NO afectar welcome-card en mobile */
+    .welcome-screen {
+        padding: 10px;
     }
     
     .keyboard {
@@ -520,20 +516,6 @@ button.ghost {
         gap: 4px;
     }
     
-    .game-description {
-        margin: 10px 0;
-    }
-    
-    .game-info {
-        margin: 10px 0;
-        padding: 12px;
-    }
-    
-    .app-title h1 {
-        font-size: 24px;
-        margin: 0 0 5px 0;
-    }
-    
     .hint-row {
         padding: 10px;
     }
@@ -543,7 +525,7 @@ button.ghost {
     }
 }
 
-/* iPhone 14 Pro específico */
+/* iPhone 14 Pro específico - solo para el área de juego */
 @media screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) {
     body {
         height: 100vh;
@@ -551,9 +533,15 @@ button.ghost {
         padding: 2px;
     }
     
-    .app, .welcome-card {
+    .app {
         height: calc(100vh - 4px);
         max-height: calc(100vh - 4px);
+    }
+    
+    /* La pantalla de bienvenida mantiene su comportamiento normal */
+    .welcome-screen {
+        padding: 15px;
+        overflow: auto;
     }
 }
 
@@ -565,17 +553,14 @@ button.ghost {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px;
+    padding: 20px;
     z-index: 100;
-    animation: fadeIn 0.5s ease;
-    overflow: hidden
+    animation: fadeIn 0.5s ease
 }
 
 .welcome-card {
     width: 100%;
     max-width: 380px;
-    height: calc(100vh - 16px);
-    max-height: calc(100vh - 16px);
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-radius: 25px;
@@ -584,18 +569,16 @@ button.ghost {
     overflow: hidden;
     animation: slideUp 0.6s ease;
     position: relative;
-    display: flex;
-    flex-direction: column
+    min-height: 70vh
 }
 
 .welcome-content {
-    padding: 20px 20px 15px 20px;
+    padding: 40px 25px 25px 25px;
     text-align: center;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    overflow-y: auto
+    justify-content: space-between
 }
 
 .app-title h1 {
@@ -617,7 +600,7 @@ button.ghost {
 
 .game-description {
     margin: 30px 0;
-    padding: 0 10px;
+    padding: 0 10px
 }
 
 .game-description p {
@@ -625,7 +608,7 @@ button.ghost {
     line-height: 1.6;
     color: #5a6c7d;
     margin: 0;
-    text-align: left;
+    text-align: left
 }
 
 .game-info {
@@ -792,10 +775,7 @@ button.ghost {
 }
 
 .confetti {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    font-size: 30px;
+    
     animation: bounce 2s infinite;
 }
 
