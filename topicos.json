@@ -1,0 +1,112 @@
+{
+  "Acentuacion": [
+    { 
+      "pista": "Palabra que tiene la sílaba tónica en el último lugar.", 
+      "solucion": "AGUDA" 
+    },
+    { 
+      "pista": "Palabra que tiene la sílaba tónica en el penúltimo lugar.", 
+      "solucion": "GRAVE" 
+    },
+    { 
+      "pista": "Palabra que tiene la sílaba tónica en el antepenúltimo lugar y siempre lleva tilde.", 
+      "solucion": "ESDRÚJULA" 
+    },
+    { 
+      "pista": "Signo gráfico que se coloca sobre una vocal para indicar acentuación.", 
+      "solucion": "TILDE" 
+    },
+    { 
+      "pista": "El golpe de voz que se hace en una sílaba.", 
+      "solucion": "ACENTUACIÓN" 
+    }
+  ],
+  "Gramatica": [
+    { 
+      "pista": "La palabra que nombra personas, animales, cosas o lugares.", 
+      "solucion": "SUSTANTIVO" 
+    },
+    { 
+      "pista": "Palabra que expresa una acción, estado o proceso.", 
+      "solucion": "VERBO" 
+    },
+    { 
+      "pista": "Palabra que modifica al sustantivo, dando una cualidad.", 
+      "solucion": "ADJETIVO" 
+    },
+    { 
+      "pista": "La parte de la oración que realiza la acción del verbo.", 
+      "solucion": "SUJETO" 
+    },
+    { 
+      "pista": "Palabra pequeña que acompaña al sustantivo, como 'el' o 'la'.", 
+      "solucion": "ARTÍCULO" 
+    }
+  ],
+  "Literatura": [
+    { 
+      "pista": "Relato breve de ficción que tiene pocos personajes y un final inesperado.", 
+      "solucion": "CUENTO" 
+    },
+    { 
+      "pista": "Texto que se escribe en versos y estrofas.", 
+      "solucion": "POEMA" 
+    },
+    { 
+      "pista": "Narración corta donde los personajes son animales y dejan una enseñanza.", 
+      "solucion": "FÁBULA" 
+    },
+    { 
+      "pista": "El autor que cuenta la historia en una narración.", 
+      "solucion": "NARRADOR" 
+    },
+    { 
+      "pista": "El lugar o momento donde se desarrolla una historia.", 
+      "solucion": "AMBIENTE" 
+    }
+  ],
+  "Vocabulario": [
+    { 
+      "pista": "Palabra que significa lo opuesto o contrario a otra.", 
+      "solucion": "ANTÓNIMO" 
+    },
+    { 
+      "pista": "Palabra que tiene un significado igual o muy parecido a otra.", 
+      "solucion": "SINÓNIMO" 
+    },
+    { 
+      "pista": "Lo contrario de 'feliz'.", 
+      "solucion": "TRISTE" 
+    },
+    { 
+      "pista": "Sinónimo de 'rápido'.", 
+      "solucion": "VELOZ" 
+    },
+    { 
+      "pista": "Sinónimo de 'casa'.", 
+      "solucion": "HOGAR" 
+    }
+  ],
+  "Tipos_de_Oracion": [
+    { 
+      "pista": "Tipo de oración que termina con un signo de pregunta.", 
+      "solucion": "INTERROGATIVA" 
+    },
+    { 
+      "pista": "Tipo de oración que termina con un signo de exclamación.", 
+      "solucion": "EXCLAMATIVA" 
+    },
+    { 
+      "pista": "Tipo de oración que afirma o niega un hecho sin expresar emoción.", 
+      "solucion": "ENUNCIATIVA" 
+    },
+    { 
+      "pista": "Oración que expresa una duda o algo que no estamos seguros.", 
+      "solucion": "DUBITATIVA" 
+    },
+    { 
+      "pista": "Oración que da una orden o un mandato.", 
+      "solucion": "IMPERATIVA" 
+    }
+  ]
+}

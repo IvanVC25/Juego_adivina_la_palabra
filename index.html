@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ahorcado educativo (móvil)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Pantalla de Inicio -->
+    <div class="welcome-screen" id="welcomeScreen">
+        <div class="welcome-card">
+            <div class="welcome-content">
+                <div class="app-title">
+                    <h1>Adivina la Palabra</h1>
+                    <p class="app-subtitle">Español</p>
+                </div>
+                
+                <div class="game-description">
+                    <p>En este juego podrás elegir un tema y responder 10 preguntas sobre el tema seleccionado. Cada respuesta correcta te hará ganar puntos. ¡Demuestra tus conocimientos!</p>
+                </div>
+                
+                <div class="game-info">
+                    <div class="info-item">
+                        <span class="info-label">Tiempo por palabra:</span>
+                        <span class="info-value">Sin límite</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Récord:</span>
+                        <span class="info-value" id="recordDisplay">0 Palabras</span>
+                    </div>
+                </div>
+                
+                <div class="decorative-elements">
+                    <div class="floating-letter">A</div>
+                    <div class="floating-letter">B</div>
+                    <div class="floating-letter">C</div>
+                    <div class="floating-emoji">📚</div>
+                    <div class="floating-emoji">✏️</div>
+                    <div class="floating-emoji">🎯</div>
+                </div>
+                
+                <div class="welcome-footer">
+                    <button class="start-btn" id="startGameBtn">
+                        <span>Empezar</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla de Felicitaciones -->
+    <div class="congratulations-screen" id="congratulationsScreen">
+        <div class="congratulations-card">
+            <div class="confetti">🎉</div>
+            <h1 class="congrats-title">¡Felicitaciones!</h1>
+            <div class="achievement-icon">🏆</div>
+            <p class="congrats-message" id="congratsMessage">¡Has completado el juego exitosamente!</p>
+            
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number" id="wordsGuessed">0</span>
+                    <span class="stat-label">Palabras adivinadas</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="currentStreak">0</span>
+                    <span class="stat-label">Racha actual</span>
+                </div>
+            </div>
+            
+            <div class="congrats-actions">
+                <button class="continue-btn" id="continueGameBtn">
+                    <span>🎯 Continuar jugando</span>
+                </button>
+                <button class="restart-btn" id="restartGameBtn">
+                    <span>🔄 Nuevo juego</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla de Juego -->
+    <div class="app" id="gameScreen" style="display: none;">
+        <header>
+            <div class="left">
+                <h1>Adivina la palabra</h1>
+            </div>
+            <div>
+                <select id="topicSelect"></select>
+            </div>
+        </header>
+
+
+        <div class="hint-row">
+            <div class="hint">
+                <div class="bulb" id="hintBtn">💡</div>
+                <div class="hint-text" id="hintShort">Selecciona una letra para jugar.</div>
+            </div>
+            <div class="lives">
+                <div>
+                    <div style="font-size:12px;color:var(--muted)">Vidas</div>
+                    <div id="livesCount">6</div>
+                </div>
+                <div class="hex" id="mascot">
+                    <div class="face">
+                        <div class="eye" id="eyeL"></div>
+                        <div class="eye" id="eyeR"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <main>
+            <div class="word" id="wordDisplay"></div>
+            <div style="display:flex;justify-content:center;margin-top:6px">
+                <div id="message"></div>
+            </div>
+        </main>
+
+
+        <section>
+            <div class="keyboard" id="keyboard"></div>
+        </section>
+
+
+        <footer class="footer">
+            <div class="controls">
+                <button class="ghost" id="giveUp">Rendirme</button>
+                <button class="cta" id="newGame">Nueva palabra</button>
+            </div>
+            <div style="font-size:12px;color:var(--muted)">Mascota animada al perder vidas</div>
+        </footer>
+    </div>
+
+
+    <div class="modal" id="hintModal">
+        <div class="card">
+            <h3>Pista</h3>
+            <p id="hintFull"></p>
+            <div style="display:flex;justify-content:flex-end;gap:8px;margin-top:12px">
+                <button class="ghost" id="closeHint">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
