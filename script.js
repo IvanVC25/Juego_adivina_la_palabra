@@ -1,6 +1,6 @@
 // --- Configuración de la API ---
 const API_CONFIG = {
-    BASE_URL: 'http://puramente.test/api/gamedata/game/5/category/espanol'
+    BASE_URL: 'https://puramentebackend.onrender.com/api/gamedata/game/5/category/espanol'
 };
 
 // Variables globales
