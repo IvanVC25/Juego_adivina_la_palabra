@@ -19,6 +19,34 @@
     { 
       "pista": "El golpe de voz que se hace en una sílaba.", 
       "solucion": "ACENTUACIÓN" 
+    },
+    { 
+      "pista": "Palabra que tiene la sílaba tónica en el lugar anterior al antepenúltimo.", 
+      "solucion": "SOBRESDRÚJULA" 
+    },
+    { 
+      "pista": "Vocal que suena más fuerte en una palabra.", 
+      "solucion": "TÓNICA" 
+    },
+    { 
+      "pista": "Vocal que suena más débil en una palabra.", 
+      "solucion": "ÁTONA" 
+    },
+    { 
+      "pista": "Unión de sonidos vocálicos en una misma sílaba.", 
+      "solucion": "DIPTONGO" 
+    },
+    { 
+      "pista": "Separación de dos vocales que normalmente formarían diptongo.", 
+      "solucion": "HIATO" 
+    },
+    { 
+      "pista": "Unión de tres vocales en una misma sílaba.", 
+      "solucion": "TRIPTONGO" 
+    },
+    { 
+      "pista": "Proceso de dividir las palabras en sílabas.", 
+      "solucion": "SILABEO" 
     }
   ],
   "Gramatica": [
@@ -41,6 +69,34 @@
     { 
       "pista": "Palabra pequeña que acompaña al sustantivo, como 'el' o 'la'.", 
       "solucion": "ARTÍCULO" 
+    },
+    { 
+      "pista": "Parte de la oración que indica lo que hace el sujeto.", 
+      "solucion": "PREDICADO" 
+    },
+    { 
+      "pista": "Palabra que sustituye al sustantivo para evitar repetición.", 
+      "solucion": "PRONOMBRE" 
+    },
+    { 
+      "pista": "Palabra que modifica al verbo, adjetivo o adverbio.", 
+      "solucion": "ADVERBIO" 
+    },
+    { 
+      "pista": "Palabra que une o relaciona otras palabras u oraciones.", 
+      "solucion": "CONJUNCIÓN" 
+    },
+    { 
+      "pista": "Palabra que relaciona un sustantivo con otros elementos.", 
+      "solucion": "PREPOSICIÓN" 
+    },
+    { 
+      "pista": "Palabra que expresa una emoción súbita.", 
+      "solucion": "INTERJECCIÓN" 
+    },
+    { 
+      "pista": "Conjunto de palabras con sentido completo.", 
+      "solucion": "ORACIÓN" 
     }
   ],
   "Literatura": [
@@ -63,6 +119,34 @@
     { 
       "pista": "El lugar o momento donde se desarrolla una historia.", 
       "solucion": "AMBIENTE" 
+    },
+    { 
+      "pista": "Narración extensa con múltiples personajes y tramas complejas.", 
+      "solucion": "NOVELA" 
+    },
+    { 
+      "pista": "Obra teatral destinada a ser representada.", 
+      "solucion": "DRAMA" 
+    },
+    { 
+      "pista": "Cada una de las líneas de un poema.", 
+      "solucion": "VERSO" 
+    },
+    { 
+      "pista": "Conjunto de versos que forman una unidad en un poema.", 
+      "solucion": "ESTROFA" 
+    },
+    { 
+      "pista": "Repetición de sonidos al final de los versos.", 
+      "solucion": "RIMA" 
+    },
+    { 
+      "pista": "Narración tradicional que se transmite oralmente.", 
+      "solucion": "LEYENDA" 
+    },
+    { 
+      "pista": "Relato tradicional sobre dioses y héroes.", 
+      "solucion": "MITO" 
     }
   ],
   "Vocabulario": [
@@ -85,6 +169,34 @@
     { 
       "pista": "Sinónimo de 'casa'.", 
       "solucion": "HOGAR" 
+    },
+    { 
+      "pista": "Lo contrario de 'alto'.", 
+      "solucion": "BAJO" 
+    },
+    { 
+      "pista": "Sinónimo de 'inteligente'.", 
+      "solucion": "SABIO" 
+    },
+    { 
+      "pista": "Lo contrario de 'frío'.", 
+      "solucion": "CALIENTE" 
+    },
+    { 
+      "pista": "Sinónimo de 'hermoso'.", 
+      "solucion": "BELLO" 
+    },
+    { 
+      "pista": "Lo contrario de 'grande'.", 
+      "solucion": "PEQUEÑO" 
+    },
+    { 
+      "pista": "Sinónimo de 'valiente'.", 
+      "solucion": "AUDAZ" 
+    },
+    { 
+      "pista": "Lo contrario de 'claro'.", 
+      "solucion": "OSCURO" 
     }
   ],
   "Tipos_de_Oracion": [
@@ -107,6 +219,34 @@
     { 
       "pista": "Oración que da una orden o un mandato.", 
       "solucion": "IMPERATIVA" 
+    },
+    { 
+      "pista": "Oración que expresa un deseo o posibilidad.", 
+      "solucion": "DESIDERATIVA" 
+    },
+    { 
+      "pista": "Oración que niega algo de forma categórica.", 
+      "solucion": "NEGATIVA" 
+    },
+    { 
+      "pista": "Oración que confirma o asegura algo.", 
+      "solucion": "AFIRMATIVA" 
+    },
+    { 
+      "pista": "Oración que tiene un solo verbo conjugado.", 
+      "solucion": "SIMPLE" 
+    },
+    { 
+      "pista": "Oración que tiene más de un verbo conjugado.", 
+      "solucion": "COMPUESTA" 
+    },
+    { 
+      "pista": "Oración que expresa una condición o hipótesis.", 
+      "solucion": "CONDICIONAL" 
+    },
+    { 
+      "pista": "Oración que expresa una acción realizada por el sujeto.", 
+      "solucion": "ACTIVA" 
     }
   ]
 }

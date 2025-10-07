@@ -17,12 +17,12 @@
         <div class="welcome-card">
             <div class="welcome-content">
                 <div class="app-title">
-                    <h1>Adivina la Palabra</h1>
+                    <h1>Caza la Palabra</h1>
                     <p class="app-subtitle">Español</p>
                 </div>
                 
                 <div class="game-description">
-                    <p>En este juego podrás elegir un tema y responder 10 preguntas sobre el tema seleccionado. Cada respuesta correcta te hará ganar puntos. ¡Demuestra tus conocimientos!</p>
+                    <p>¡Bienvenido a Caza la Palabra! Selecciona un tema y demuestra tu conocimiento del español adivinando palabras letra por letra. Cada palabra correcta te dará puntos, y puedes conseguir bonus por velocidad, precisión y rachas. ¡Cuidado con las vidas! Tienes 6 intentos por palabra.</p>
                 </div>
                 
                 <div class="game-info">
@@ -34,6 +34,13 @@
                         <span class="info-label">Récord:</span>
                         <span class="info-value" id="recordDisplay">0 Palabras</span>
                     </div>
+                </div>
+
+                <div class="topic-selection">
+                    <div class="topic-label">Selecciona un tema:</div>
+                    <select class="topic-select-welcome" id="topicSelectWelcome">
+                        <option value="">Cargando temas...</option>
+                    </select>
                 </div>
                 
                 <div class="decorative-elements">
@@ -70,6 +77,10 @@
                     <span class="stat-number" id="currentStreak">0</span>
                     <span class="stat-label">Racha actual</span>
                 </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="sessionScoreCongrats">0</span>
+                    <span class="stat-label">Puntos totales</span>
+                </div>
             </div>
             
             <div class="congrats-actions">
@@ -77,7 +88,7 @@
                     <span>🎯 Continuar jugando</span>
                 </button>
                 <button class="restart-btn" id="restartGameBtn">
-                    <span>🔄 Nuevo juego</span>
+                    <span>🏁 Terminar juego</span>
                 </button>
             </div>
         </div>
@@ -85,14 +96,28 @@
 
     <!-- Pantalla de Juego -->
     <div class="app" id="gameScreen" style="display: none;">
+        <div class="back-to-home" id="backToHomeBtn" title="Volver al inicio">✕</div>
         <header>
-            <div class="left">
-                <h1>Adivina la palabra</h1>
-            </div>
-            <div>
-                <select id="topicSelect"></select>
+            <div class="header-center">
+                <h1>Caza la Palabra</h1>
             </div>
         </header>
+
+        <!-- Display de Puntaje -->
+        <div class="score-display">
+            <div class="score-item">
+                <div class="score-label">Sesión</div>
+                <div class="score-value" id="sessionScore">0</div>
+            </div>
+            <div class="score-item">
+                <div class="score-label">Mejor</div>
+                <div class="score-value" id="bestScore">0</div>
+            </div>
+            <div class="score-item">
+                <div class="score-label">Racha</div>
+                <div class="score-value" id="currentStreakGame">0</div>
+            </div>
+        </div>
 
 
         <div class="hint-row">
@@ -129,11 +154,10 @@
 
 
         <footer class="footer">
-            <div class="controls">
+            <div class="controls-centered">
                 <button class="ghost" id="giveUp">Rendirme</button>
                 <button class="cta" id="newGame">Nueva palabra</button>
             </div>
-            <div style="font-size:12px;color:var(--muted)">Mascota animada al perder vidas</div>
         </footer>
     </div>
 
@@ -144,6 +168,19 @@
             <p id="hintFull"></p>
             <div style="display:flex;justify-content:flex-end;gap:8px;margin-top:12px">
                 <button class="ghost" id="closeHint">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Confirmación -->
+    <div class="modal" id="confirmModal">
+        <div class="card confirm-card">
+            <div class="confirm-icon">⚠️</div>
+            <h3 id="confirmTitle">Confirmar acción</h3>
+            <p id="confirmMessage">¿Estás seguro de que quieres continuar?</p>
+            <div class="confirm-actions">
+                <button class="ghost" id="confirmCancel">Cancelar</button>
+                <button class="cta" id="confirmAccept">Aceptar</button>
             </div>
         </div>
     </div>
