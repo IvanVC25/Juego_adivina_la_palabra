@@ -100,6 +100,34 @@ body {
     overflow: hidden
 }
 
+/* Limitación de altura para pantallas grandes (PC/Desktop) */
+@media screen and (min-width: 768px) {
+    .app {
+        max-height: 700px;
+        height: auto;
+        min-height: 600px;
+    }
+    
+    body {
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+}
+
+/* Ajustes para pantallas muy grandes (monitores grandes) */
+@media screen and (min-width: 1200px) {
+    .app {
+        max-height: 750px;
+        max-width: 420px;
+        min-height: 650px;
+    }
+    
+    body {
+        padding: 40px;
+    }
+}
+
 /* Estilos para el sistema de puntaje */
 .score-display {
     display: flex;
