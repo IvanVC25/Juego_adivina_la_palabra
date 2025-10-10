@@ -85,8 +85,9 @@ body {
 .app {
     width: 100%;
     max-width: 390px;
-    height: calc(100vh - 16px);
-    max-height: calc(100vh - 16px);
+    height: auto;
+    max-height: 700px;
+    min-height: 600px;
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -648,6 +649,8 @@ button.ghost:hover {
     
     .app {
         height: calc(100vh - 8px);
+        max-height: calc(100vh - 8px);
+        min-height: auto;
         padding: 12px;
         gap: 8px;
     }
@@ -698,6 +701,21 @@ button.ghost:hover {
     
     .score-value {
         font-size: 16px;
+    }
+}
+
+/* Consulta de medios general para dispositivos móviles */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 4px;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .app {
+        height: calc(100vh - 8px);
+        max-height: calc(100vh - 8px);
+        min-height: auto;
     }
 }
 
